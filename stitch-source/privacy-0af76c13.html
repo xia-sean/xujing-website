@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2d6c4e",
+                        "background-light": "#f6f7f7",
+                        "background-dark": "#151d19",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .prose p { margin-bottom: 1.5rem; }
+        details summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 md:px-10 lg:px-40 py-3 flex items-center justify-between">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 bg-primary/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">gavel</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">隐私政策</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">首页</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">关于我们</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">联系我们</a>
+<a class="text-sm font-bold text-primary" href="#">隐私政策</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex cursor-pointer items-center justify-center rounded-xl h-10 bg-primary/10 hover:bg-primary/20 text-primary transition-all px-4 gap-2 text-sm font-bold">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span class="hidden sm:inline">分享</span>
+</button>
+<button class="flex cursor-pointer items-center justify-center rounded-xl h-10 bg-primary text-white hover:opacity-90 transition-all px-4 gap-2 text-sm font-bold">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="hidden sm:inline">下载 PDF</span>
+</button>
+</div>
+</header>
+<main class="px-4 md:px-10 lg:px-40 py-12 flex justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Hero Section -->
+<div class="flex flex-col gap-5 mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold w-fit">
+<span class="material-symbols-outlined text-xs">verified_user</span>
+                    官方发布
+                </div>
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">隐私保护承诺</h1>
+<div class="flex items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-sm md:text-base font-normal">版本号：V2023.10</p>
+<span class="w-1.5 h-1.5 rounded-full bg-primary/30"></span>
+<p class="text-slate-500 dark:text-slate-400 text-sm md:text-base font-normal">最近更新日期：2023年10月27日</p>
+</div>
+</div>
+<!-- Introduction -->
+<div class="mb-16">
+<p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-lg">
+                    我们非常重视您的隐私。本政策旨在说明我们如何处理您的个人信息，以便您能够做出明智的决定。我们致力于通过最高标准的技术 and 管理措施保护您的数据安全。
+                </p>
+</div>
+<!-- Section 1: Data Collection -->
+<section class="mb-16">
+<div class="flex items-center gap-4 mb-8">
+<div class="size-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">1</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">我们可能收集的信息</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-primary/10 shadow-sm transition-all hover:shadow-md">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">person</span>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-lg mb-3">个人身份信息</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">包括您的姓名、电子邮件地址、电话号码以及您在使用服务时主动提供的其他个人资料。</p>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-primary/10 shadow-sm transition-all hover:shadow-md">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">devices</span>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-lg mb-3">设备与日志信息</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">包括IP地址、浏览器类型、操作系统版本、唯一的设备标识符以及您的操作记录。</p>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-primary/10 shadow-sm transition-all hover:shadow-md md:col-span-2">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">location_on</span>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-lg mb-3">地理位置数据</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">经您授权，我们可能会通过GPS、Wi-Fi或基站信息收集您的精确或模糊位置，以提供个性化的本地服务。</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Usage Purposes (Updated to match Screen_6 style) -->
+<section class="mb-16">
+<div class="flex items-center gap-4 mb-8">
+<div class="size-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">2</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">信息使用</h2>
+</div>
+<div class="space-y-4 text-slate-700 dark:text-slate-300">
+<p class="mb-6">我们收集的信息将严格用于以下目的：</p>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="flex flex-col p-5 rounded-xl bg-primary/5 border border-primary/10 hover:bg-primary/10 transition-colors">
+<span class="font-bold text-primary mb-2 text-lg">服务交付</span>
+<p class="text-sm leading-relaxed">为您提供精准的工程设计方案、技术支持及售后咨询服务。</p>
+</div>
+<div class="flex flex-col p-5 rounded-xl bg-primary/5 border border-primary/10 hover:bg-primary/10 transition-colors">
+<span class="font-bold text-primary mb-2 text-lg">沟通管理</span>
+<p class="text-sm leading-relaxed">回复您的咨询、寄送合同文件或发送与您项目相关的通知。</p>
+</div>
+<div class="flex flex-col p-5 rounded-xl bg-primary/5 border border-primary/10 hover:bg-primary/10 transition-colors">
+<span class="font-bold text-primary mb-2 text-lg">合规经营</span>
+<p class="text-sm leading-relaxed">满足审计、法律合规以及政府监管部门的要求。</p>
+</div>
+<div class="flex flex-col p-5 rounded-xl bg-primary/5 border border-primary/10 hover:bg-primary/10 transition-colors">
+<span class="font-bold text-primary mb-2 text-lg">质量提升</span>
+<p class="text-sm leading-relaxed">通过数据分析，改进我们的设计工具、服务流程和用户界面。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Protection & Sharing -->
+<section class="mb-16">
+<div class="flex items-center gap-4 mb-8">
+<div class="size-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">3</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">信息保护与共享</h2>
+</div>
+<div class="bg-primary/5 rounded-2xl p-6 md:p-10 border border-primary/20">
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-1">
+<h3 class="text-primary text-xl font-bold mb-5 flex items-center gap-3">
+<span class="material-symbols-outlined">security</span>
+                                三重加密防护
+                            </h3>
+<p class="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">我们采用业界领先的 AES-256 加密标准对存储数据进行保护，并在传输过程中使用 TLS 协议防止拦截。</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="text-sm md:text-base">定期进行第三方安全审计，确保系统无漏洞。</span>
+</li>
+<li class="flex items-start gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="text-sm md:text-base">严格的员工数据访问权限管理，遵循最小权限原则。</span>
+</li>
+<li class="flex items-start gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="text-sm md:text-base">去标识化处理（Anonymization），在分析数据时保护身份。</span>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-72 aspect-square bg-white dark:bg-slate-700 rounded-2xl overflow-hidden relative shadow-lg">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-8xl">verified_user</span>
+</div>
+<img alt="Security Image" class="w-full h-full object-cover mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATzxbJnf3ToXNdkrsSebdgKe78g4x3mCcn-8M5UtPiuS1H20-zanz5UgkRtUxuZ8S_hiJ0ggXLKjFF4wZW_LWEAJBDajSmLGjjnieSCHemd76wNBZXDN7I7AZXVy3N9n-2Zn85-JbYEn2D8s4oadltrGY_gMA848kMpQXFDHL5A3F_T2wEAe9hn5F1SPAeXpSDj2mki_1PtdWvLooIuhlwJ_1Oa1e0Eq7ORGs2RiJwTCZ6YWJ46hEwZt2HVwEibNrXeOB0vqZjkiH1"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Contact Us -->
+<section class="mb-20">
+<div class="flex items-center gap-4 mb-8">
+<div class="size-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">4</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">联系我们</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<a class="flex flex-col items-center p-8 bg-white dark:bg-slate-800 rounded-2xl border border-primary/10 hover:border-primary transition-all group text-center shadow-sm" href="mailto:privacy@brand.com">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">mail</span>
+<span class="font-bold text-slate-900 dark:text-slate-100 text-lg mb-1">电子邮件</span>
+<span class="text-sm text-slate-500">privacy@brand.com</span>
+</a>
+<a class="flex flex-col items-center p-8 bg-white dark:bg-slate-800 rounded-2xl border border-primary/10 hover:border-primary transition-all group text-center shadow-sm" href="tel:400-888-9999">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">call</span>
+<span class="font-bold text-slate-900 dark:text-slate-100 text-lg mb-1">隐私专线</span>
+<span class="text-sm text-slate-500">400-888-9999</span>
+</a>
+<div class="flex flex-col items-center p-8 bg-white dark:bg-slate-800 rounded-2xl border border-primary/10 hover:border-primary transition-all group text-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">pin_drop</span>
+<span class="font-bold text-slate-900 dark:text-slate-100 text-lg mb-1">办公地址</span>
+<span class="text-sm text-slate-500">上海市静安区科技路1号</span>
+</div>
+</div>
+</section>
+<!-- Footer Consent -->
+<div class="border-t border-primary/10 pt-12 pb-20 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-8">继续使用我们的服务即表示您已阅读并同意上述隐私条款</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-white px-10 py-4 rounded-full font-bold hover:shadow-lg hover:shadow-primary/30 transition-all text-base">
+                        我已阅读并同意
+                    </button>
+<button class="w-full sm:w-auto bg-primary/10 text-primary px-10 py-4 rounded-full font-bold hover:bg-primary/20 transition-all text-base">
+                        返回首页
+                    </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

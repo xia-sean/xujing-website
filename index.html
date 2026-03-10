@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="虚境工程设计（河北）有限公司官方网站，提供工程设计活动、专业设计服务、建材业务、软件开发与技术支持。"
+    />
+    <title>虚境工程设计（河北）有限公司</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2d6c4e",
+              "primary-light": "#4ba578",
+              "background-light": "#f6f7f7",
+              "background-dark": "#151d19"
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              "2xl": "1.5rem",
+              "3xl": "2rem",
+              full: "9999px"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-background-light font-display text-slate-900">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
